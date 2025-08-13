@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanillaMapObjects", "VanillaMapObjects.csproj", "{0BCE3A9F-2245-4A2C-94BF-5710D9EECDED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanillaMapObjectsEditor", "VanillaMapObjectsEditor\VanillaMapObjectsEditor.csproj", "{0A008048-73D9-4AEC-9873-F16C05DE9855}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BCE3A9F-2245-4A2C-94BF-5710D9EECDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCE3A9F-2245-4A2C-94BF-5710D9EECDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCE3A9F-2245-4A2C-94BF-5710D9EECDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCE3A9F-2245-4A2C-94BF-5710D9EECDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A008048-73D9-4AEC-9873-F16C05DE9855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A008048-73D9-4AEC-9873-F16C05DE9855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A008048-73D9-4AEC-9873-F16C05DE9855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A008048-73D9-4AEC-9873-F16C05DE9855}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84529D61-AC28-4BC0-B82B-D152F8F04FB3}
+	EndGlobalSection
+EndGlobal
