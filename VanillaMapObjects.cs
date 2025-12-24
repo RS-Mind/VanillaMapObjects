@@ -6,6 +6,7 @@ using UnityEngine;
 namespace VanillaMapObjects
 {
     [BepInDependency("com.willis.rounds.unbound")]
+    [BepInDependency("io.olavim.rounds.mapsextended")]
     [BepInPlugin(ModId, ModName, Version)]
     [BepInProcess("Rounds.exe")]
     public class VanillaMapObjects : BaseUnityPlugin
@@ -16,7 +17,7 @@ namespace VanillaMapObjects
 
         public static VanillaMapObjects instance { get; private set; }
 
-        public AssetBundle MapObjectAssets;
+        public static AssetBundle MapObjectAssets = AssetUtils.LoadAssetBundleFromResources("smashers", typeof(VanillaMapObjects).Assembly);
         public GameObject smasher1;
         public GameObject smasher2;
 
@@ -25,7 +26,7 @@ namespace VanillaMapObjects
             var harmony = new Harmony(ModId);
             harmony.PatchAll();
 
-            MapObjectAssets = AssetUtils.LoadAssetBundleFromResources("smashers", typeof(VanillaMapObjects).Assembly);
+            //MapObjectAssets = AssetUtils.LoadAssetBundleFromResources("smashers", typeof(VanillaMapObjects).Assembly);
         }
 
         void Start()

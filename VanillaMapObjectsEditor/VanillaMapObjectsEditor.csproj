@@ -277,8 +277,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MapObjects\SmasherV2.cs" />
-    <Compile Include="MapObjects\SmasherV1.cs" />
+    <Compile Include="EditorEventHandlers\BoxHealthHandler.cs" />
+    <Compile Include="EditorEventHandlers\MassHandler.cs" />
+    <Compile Include="EditorEventHandlers\MoveSequenceHandler.cs" />
+    <Compile Include="EditorEventHandlers\SmasherDelayHandler.cs" />
+    <Compile Include="MapObjectProperties\EditorMoveSequenceProperty.cs" />
+    <Compile Include="MapObjectProperties\EditorBoxHealthProperty.cs" />
+    <Compile Include="MapObjectProperties\EditorMassProperty.cs" />
+    <Compile Include="MapObjectProperties\EditorDelayProperty.cs" />
+    <Compile Include="MapObjects\AdjustableMassBox.cs" />
+    <Compile Include="MapObjects\AdjustableMassSaw.cs" />
+    <Compile Include="MapObjects\AdjustableHealthBox.cs" />
+    <Compile Include="MapObjects\MovingPlatform.cs" />
+    <Compile Include="MapObjects\WreckingBall.cs" />
+    <Compile Include="MapObjects\Smasher.cs" />
     <Compile Include="VanillaMapObjectsEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

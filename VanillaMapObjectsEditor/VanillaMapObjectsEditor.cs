@@ -9,6 +9,7 @@ namespace VanillaMapObjectsEditor
 {
     [BepInDependency("com.willis.rounds.unbound")]
     [BepInDependency("io.olavim.rounds.mapsextended")]
+    [BepInDependency("io.olavim.rounds.mapsextended.editor")]
     [BepInDependency("com.rsmind.rounds.vanillamapobjects")]
     [BepInPlugin(ModId, ModName, Version)]
     [BepInProcess("Rounds.exe")]

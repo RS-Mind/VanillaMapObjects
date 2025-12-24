@@ -4,12 +4,13 @@ using VanillaMapObjects.MapObjects;
 
 namespace VanillaMapObjectsEditor.MapObjects
 {
-    [EditorMapObject(typeof(SmasherV2Data), "Smasher v2", Category = "Smashers")]
-    public sealed class EditorSmasherV2 : SmasherV2
+    [EditorMapObject(typeof(WreckingBallData), "Wrecking Ball", Category = "Advanced")]
+    public sealed class EditorWreckingBall : WreckingBall
     {
         public override void OnInstantiate(GameObject instance)
         {
             base.OnInstantiate(instance);
+            MapsExt.Utils.GameObjectUtils.DisableRigidbody(instance);
         }
     }
 }
