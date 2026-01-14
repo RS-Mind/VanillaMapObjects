@@ -18,15 +18,11 @@ namespace VanillaMapObjects
         public static VanillaMapObjects instance { get; private set; }
 
         public static AssetBundle MapObjectAssets = AssetUtils.LoadAssetBundleFromResources("smashers", typeof(VanillaMapObjects).Assembly);
-        public GameObject smasher1;
-        public GameObject smasher2;
 
         void Awake()
         {
             var harmony = new Harmony(ModId);
             harmony.PatchAll();
-
-            //MapObjectAssets = AssetUtils.LoadAssetBundleFromResources("smashers", typeof(VanillaMapObjects).Assembly);
         }
 
         void Start()

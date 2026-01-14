@@ -1,0 +1,10 @@
+{
+    "name": "VanillaMapObjectsEditor",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/RS-Mind/VanillaMapObjects",
+    "description": "Editor for advanced map objects from vanilla maps",
+    "dependencies": [
+        "olavim-MapsExtended-1.4.2",
+		"RS_Mind-VanillaMapObjects-1.0.0"
+    ]
+}

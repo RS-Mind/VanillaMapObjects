@@ -278,6 +278,7 @@
     <Compile Include="MapObjectProperties\BoxHealthProperty.cs" />
     <Compile Include="MapObjectProperties\MassProperty.cs" />
     <Compile Include="MapObjectProperties\DelayProperty.cs" />
+    <Compile Include="MapObjects\AdjustableMassBoxBg.cs" />
     <Compile Include="MapObjects\AdjustableMassBox.cs" />
     <Compile Include="MapObjects\AdjustableMassSaw.cs" />
     <Compile Include="MapObjects\AdjustableHealthBox.cs" />

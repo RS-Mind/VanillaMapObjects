@@ -1,4 +1,4 @@
-# Vanilla Map Objects
+# Vanilla Map Objects Editor
 Advanced Map Objects from vanilla maps. All new objects can be found in the Advanced category
 
 ### Variable Box

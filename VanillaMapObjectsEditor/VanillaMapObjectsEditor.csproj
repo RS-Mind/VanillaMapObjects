@@ -285,6 +285,7 @@
     <Compile Include="MapObjectProperties\EditorBoxHealthProperty.cs" />
     <Compile Include="MapObjectProperties\EditorMassProperty.cs" />
     <Compile Include="MapObjectProperties\EditorDelayProperty.cs" />
+    <Compile Include="MapObjects\AdjustableMassBoxBg.cs" />
     <Compile Include="MapObjects\AdjustableMassBox.cs" />
     <Compile Include="MapObjects\AdjustableMassSaw.cs" />
     <Compile Include="MapObjects\AdjustableHealthBox.cs" />

@@ -1,14 +1,9 @@
 {
-    "name": "RSCards",
-    "version_number": "1.4.5",
-    "website_url": "https://github.com/RS-Mind/rscards",
-    "description": "Cards for ROUNDS focused on adding variety with vanilla stats",
+    "name": "VanillaMapObjects",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/RS-Mind/VanillaMapObjects",
+    "description": "Advanced map objects from vanilla maps",
     "dependencies": [
-        "Pykess-ModdingUtils-0.4.8",
-		"willis81808-UnboundLib-3.2.14",
-		"TeamDK-ZeroGBulletPatch-1.1.0",
-		"Pykess-CardChoiceSpawnUniqueCardPatch-0.1.10",
-		"RS_Mind-FancyCardBar-1.2.0",
-		"RS_Mind-WeaponsManager-1.1.0"
+        "olavim-MapsExtended-1.4.2"
     ]
 }
