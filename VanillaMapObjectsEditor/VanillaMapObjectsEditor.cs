@@ -1,9 +1,5 @@
-﻿using System;
-using System.Reflection;
-using BepInEx;
+﻿using BepInEx;
 using HarmonyLib;
-using MapsExt;
-using UnboundLib;
 
 namespace VanillaMapObjectsEditor
 {
@@ -17,7 +13,7 @@ namespace VanillaMapObjectsEditor
     {
         private const string ModId = "com.rsmind.rounds.vanillamapobjectseditor";
         private const string ModName = "Vanilla Map Objects Editor";
-        public const string Version = "1.0.0";
+        public const string Version = "1.1.0";
 
         public static VanillaMapObjectsEditor instance { get; private set; }
 

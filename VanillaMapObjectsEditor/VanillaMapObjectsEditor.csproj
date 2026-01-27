@@ -277,23 +277,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditorEventHandlers\SpringyRopeAttributesHandler.cs" />
     <Compile Include="EditorEventHandlers\BoxHealthHandler.cs" />
     <Compile Include="EditorEventHandlers\MassHandler.cs" />
     <Compile Include="EditorEventHandlers\MoveSequenceHandler.cs" />
     <Compile Include="EditorEventHandlers\SmasherDelayHandler.cs" />
+    <Compile Include="MapObjectProperties\EditorSpringyRopeAttributesProperty.cs" />
     <Compile Include="MapObjectProperties\EditorMoveSequenceProperty.cs" />
     <Compile Include="MapObjectProperties\EditorBoxHealthProperty.cs" />
     <Compile Include="MapObjectProperties\EditorMassProperty.cs" />
     <Compile Include="MapObjectProperties\EditorDelayProperty.cs" />
+    <Compile Include="MapObjectProperties\EditorSpringyRopePositionProperty.cs" />
+    <Compile Include="MapObjects\AdjustableHealthBox.cs" />
     <Compile Include="MapObjects\AdjustableMassBoxBg.cs" />
     <Compile Include="MapObjects\AdjustableMassBox.cs" />
     <Compile Include="MapObjects\AdjustableMassSaw.cs" />
-    <Compile Include="MapObjects\AdjustableHealthBox.cs" />
+    <Compile Include="MapObjects\SpringyRope.cs" />
     <Compile Include="MapObjects\MovingPlatform.cs" />
     <Compile Include="MapObjects\WreckingBall.cs" />
     <Compile Include="MapObjects\Smasher.cs" />
     <Compile Include="VanillaMapObjectsEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visualizers\IMapObjectVisualizer.cs" />
+    <Compile Include="Visualizers\SpringyRopeVisualizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VanillaMapObjects.csproj">
@@ -301,5 +307,6 @@
       <Name>VanillaMapObjects</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

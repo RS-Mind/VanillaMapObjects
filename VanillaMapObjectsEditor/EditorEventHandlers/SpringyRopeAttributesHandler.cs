@@ -6,10 +6,10 @@ using VanillaMapObjects.MapObjectProperties;
 
 namespace VanillaMapObjectsEditor.Events
 {
-    internal class MassHandler : EditorEventHandler, ITransformModifyingEditorEventHandler
+    internal class SpringyRopeAttributesHandler : EditorEventHandler, ITransformModifyingEditorEventHandler
     {
         private bool _isChanging;
-        private MassProperty _prevMass;
+        private SpringyRopeAttributesProperty _prevAttributes;
 
         public GameObject Content {  get; private set; }
         public event TransformChangedEventHandler OnTransformChanged;
@@ -18,7 +18,7 @@ namespace VanillaMapObjectsEditor.Events
         {
             base.Awake();
 
-            this.Content = new GameObject("Mass Interaction Content");
+            this.Content = new GameObject("Spring Attributes Interaction Content");
             this.Content.transform.SetParent(this.transform);
             this.Content.transform.localScale = Vector3.one;
             this.Content.layer = MapsExtendedEditor.MapObjectUILayer;
@@ -33,32 +33,28 @@ namespace VanillaMapObjectsEditor.Events
             
         }
 
-        public virtual void SetValue(MassProperty mass)
+        public virtual void SetValue(SpringyRopeAttributesProperty attributes)
         {
-            this.GetComponent<MassPropertyInstance>().Mass = mass;
-            var rigidbody = this.GetComponent<Rigidbody2D>()
-                ?? throw new System.ArgumentException("GameObject does not have a rigidbody script", nameof(this.gameObject));
-
-            rigidbody.mass = mass.Value * 1000;
+            this.GetComponent<SpringyRopeAttributesPropertyInstance>().Attributes = attributes;
             this.OnTransformChanged?.Invoke();
         }
 
-        public virtual MassProperty GetValue()
+        public virtual SpringyRopeAttributesProperty GetValue()
         {
-            return this.GetComponent<MassPropertyInstance>().Mass / 1000f;
+            return this.GetComponent<SpringyRopeAttributesPropertyInstance>().Attributes;
         }
 
         private void OnChangeStart()
         {
             this._isChanging = true;
-            this._prevMass = this.GetValue();
+            this._prevAttributes = this.GetValue();
         }
 
         private void OnChangeEnd()
         {
             this._isChanging = false;
 
-            if (this.GetValue() != this._prevMass)
+            if (this.GetValue() != this._prevAttributes)
             {
                 this.Editor.TakeSnaphot();
             }

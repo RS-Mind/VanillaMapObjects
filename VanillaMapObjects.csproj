@@ -274,10 +274,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\RoundsExtensions.cs" />
     <Compile Include="MapObjectProperties\MoveSequenceProperty.cs" />
     <Compile Include="MapObjectProperties\BoxHealthProperty.cs" />
     <Compile Include="MapObjectProperties\MassProperty.cs" />
     <Compile Include="MapObjectProperties\DelayProperty.cs" />
+    <Compile Include="MapObjectProperties\SpringyRopeAttributesProperty.cs" />
+    <Compile Include="MapObjectProperties\SpringyRopePositionProperty.cs" />
+    <Compile Include="MapObjects\SpringyRope.cs" />
     <Compile Include="MapObjects\AdjustableMassBoxBg.cs" />
     <Compile Include="MapObjects\AdjustableMassBox.cs" />
     <Compile Include="MapObjects\AdjustableMassSaw.cs" />

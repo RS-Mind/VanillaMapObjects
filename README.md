@@ -27,3 +27,6 @@ A physics ball with customizable mass. In vanilla, they have 500 mass and are sc
 
 ### Smasher
 Smashers from "Factory 1". Initial delay is customizable.
+
+### Springy Rope
+Ropes that act like springs. Their frequency (how not-stretchy they are) and their damping ratio (how quickly they stop moving) is customizable

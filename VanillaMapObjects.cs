@@ -13,7 +13,7 @@ namespace VanillaMapObjects
     {
         private const string ModId = "com.rsmind.rounds.vanillamapobjects";
         private const string ModName = "VanillaMapObjects";
-        public const string Version = "1.0.0";
+        public const string Version = "1.1.0";
 
         public static VanillaMapObjects instance { get; private set; }
 
@@ -28,6 +28,15 @@ namespace VanillaMapObjects
         void Start()
         {
             instance = this;
+        }
+
+        [HarmonyPatch(typeof(MapObjet_Rope), "AddJoint")]
+        static class RopePatch_AddJoint
+        {
+            public static void Postfix(MapObjet_Rope __instance, SpringJoint2D ___joint)
+            {
+                __instance.JointAdded(___joint);
+            }
         }
     }
 }

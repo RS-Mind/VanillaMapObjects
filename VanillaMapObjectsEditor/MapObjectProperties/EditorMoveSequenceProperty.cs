@@ -1,23 +1,14 @@
 ﻿using MapsExt;
-using MapsExt.Editor;
 using MapsExt.Editor.Properties;
 using MapsExt.Editor.UI;
-using MapsExt.Editor.Utils;
 using MapsExt.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.ExceptionServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
 using UnboundLib;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 using VanillaMapObjects.MapObjectProperties;
-using VanillaMapObjects.MapObjects;
-using VanillaMapObjectsEditor.MapObjects;
 
 namespace VanillaMapObjectsEditor.MapObjectProperties
 {

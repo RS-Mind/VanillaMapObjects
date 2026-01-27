@@ -1,11 +1,5 @@
 ﻿using MapsExt.Editor;
 using MapsExt.Editor.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using VanillaMapObjects.MapObjectProperties;

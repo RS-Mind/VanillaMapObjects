@@ -1,13 +1,6 @@
 ﻿using MapsExt;
 using MapsExt.MapObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnboundLib;
 using UnityEngine;
-using UnityEngine.Events;
 using VanillaMapObjects.MapObjectProperties;
 
 namespace VanillaMapObjects.MapObjects
